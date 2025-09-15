@@ -98,6 +98,11 @@ section.mesect a.gorciulink.pos2 {
     right: 0;
 }
 
+section.mesect a.gorciulink.pos3 {
+    bottom: 0;
+    left: 0;
+}
+
 .column {
     padding: 15px;
     border: 2px solid #ff8800;
