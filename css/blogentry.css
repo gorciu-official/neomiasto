@@ -25,3 +25,7 @@ pre {
     padding: 5px;
     margin-bottom: 10px;
 }
+
+img {
+    max-width: 100%;
+}
