@@ -108,14 +108,13 @@
 
             setTimeout(() => {
                 const not = document.createElement('div');
-                not.innerHTML = 'Hi! I see you enjoy using my website! Do you want to leave a message in my <a href="guestbook.html" target="main-content">guestbook</a> and sign up to my <a href="fun/newsletter.html" target="main-content">newsletter</a>? <a href="javascript:this.parentElement.remove();">Dismiss the notification</a>.';
+                not.innerHTML = 'Hi! I see you enjoy using my website! Do you want to leave a message in my <a href="guestbook.html" target="main-content">guestbook</a> and sign up to my <a href="fun/newsletter.html" target="main-content">newsletter</a>? <a href="javascript:document.querySelector(\'notification-ad\').parentElement.remove();">Dismiss the notification</a>.';
                 Object.assign(not.style, {
                     position: 'fixed',
                     bottom: '10px',
                     right: '10px',
                     backgroundColor: '#fff',
-                    width: '350px',
-                    height: '75px',
+                    maxWidth: '350px',
                     wordWrap: 'break-word',
                     padding: '10px',
                     color: 'black'
@@ -124,7 +123,7 @@
                     not.style.bottom = `${Math.floor(Math.random() * 3 + 10)}px`;
                     not.style.right = `${Math.floor(Math.random() * 3 + 10)}px`;
                 }, 5);
-                
+                not.classList.add('notification-ad');
                 document.body.appendChild(not);
             }, 5 * 60 * 1000)
         }
