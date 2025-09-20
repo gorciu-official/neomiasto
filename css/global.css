@@ -104,3 +104,7 @@ small, small * {
         opacity: 0;
     }
 }
+
+.if-not-target-hide:not(:target) {
+    display: none;
+}
