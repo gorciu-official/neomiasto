@@ -62,7 +62,7 @@ a {
 
 a:hover {
     transition: 0.25s;
-    color: lime;
+    color: #00ff00;
 }
 
 hr {
