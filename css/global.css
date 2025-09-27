@@ -93,14 +93,14 @@ small, small * {
     font-size: 14px;
     pointer-events: none;
     user-select: none;
-    animation: fall 2s linear forwards;
+    animation: fall 0.5s linear forwards;
     text-shadow: 2px 2px 2px black;
     z-index: 10000;
 }
 
 @keyframes fall {
     to {
-        transform: translateY(100px) rotate(360deg);
+        transform: translateY(20px) rotate(360deg);
         opacity: 0;
     }
 }

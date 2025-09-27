@@ -15,11 +15,10 @@ const mainFunction = () => {
         snowflake.style.top = e.pageY + "px";
 
         snowflake.style.fontSize = (Math.random() * 10 + 10) + "px";
-        snowflake.style.animationDuration = (Math.random() * 1.5 + 1) + "s";
 
         setTimeout(() => {
             snowflake.remove();
-        }, 2000);
+        }, 500);
     });
 };
 

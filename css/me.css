@@ -1,4 +1,5 @@
 @import url(global.css);
+@import url(https://fonts.googleapis.com/css2?family=Caveat&display=swap); /** neocities dont decline it plz */
 
 @font-face {
     font-family: 'abaddon_light';
@@ -10,7 +11,7 @@
 }
 
 body {
-    background-image: linear-gradient(45deg, #fff, #03c72d, #7ddb12, #c9a814, #dd241d, #000);
+    background-image: linear-gradient(45deg, #000000, #431991, #404d9b, #03c72d, #7ddb12, #c9a814, #dd241d, #000);
     padding: 30px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -97,6 +98,7 @@ main .left * {
     border-radius: 10px;
     padding: 5px;
     position: relative;
+    overflow: hidden;
 }
 
 .window, .window * {
@@ -119,11 +121,14 @@ main .left * {
 .window-content {
     padding: 5px;
     background-color: #ffffff;
-    margin-bottom: 10px;
 }
 
 .window-content, .window-content *, .title-bar-button {
     color: black;
+}
+
+.window {
+    margin-bottom: 10px;
 }
 
 .window-content ul li {
@@ -162,4 +167,75 @@ main .left * {
     width: 220px;
     height: 150px;
     rotate: 10deg;
+}
+
+.core-interest-coding {
+    background-image: url(https://textures.neocities.org/textures/humans-and-technology/comp016.gif);
+    margin-left: -5px;
+    width: calc(100% + 10px);
+    padding: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.core-interest-writing {
+    background-image: url(https://textures.neocities.org/thumbnails/paper-and-sponge/thumb_Fiesta_Bkgrd.jpg);
+    background-color: #00000041;
+    background-blend-mode: darken;
+    margin-left: -5px;
+    width: calc(100% + 10px);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    margin-top: -20px;
+    clip-path: polygon(
+        0 15px,   5% 0,   10% 15px,
+        15% 0,   20% 15px,
+        25% 0,   30% 15px,
+        35% 0,   40% 15px,
+        45% 0,   50% 15px,
+        55% 0,   60% 15px,
+        65% 0,   70% 15px,
+        75% 0,   80% 15px,
+        85% 0,   90% 15px,
+        95% 0,  100% 15px,
+        100% 100%, 0 100%
+    );
+}
+
+.core-interest-writing .window {
+    max-width: 400px;
+}
+
+.core-interest-writing p.writing-example {
+    font-family: 'Caveat', fantasy, monospace;
+    rotate: 2deg;
+    color: black;
+    text-shadow: 1px 1px 1px white;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.core-interest-coding .window {
+    box-shadow: 2px 2px 2px black;
+    max-width: 500px;
+}
+
+.core-interest-coding .screen {
+    border: 5px solid #141414;
+    max-width: 500px;
+}
+
+.core-interest-coding .window-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.core-interest-coding .window-wrapper marquee {
+    background-color: #000;
+    padding: 5px;
+    border-radius: 5px;
 }
